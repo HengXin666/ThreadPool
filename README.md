@@ -1,7 +1,7 @@
 <h1 align="center">HXThreadPool</h1>
 Linux, Windows 平台的轻量级C++线程池, 支持可变参数的函数/类方法/仿函数/匿名函数等等, 使用简单, 可自定义线程池增减规则, 日志打印等
 代码简单, 不过几百行.
-<p align="center">|<a href="https://996.icu"><img src="https://img.shields.io/badge/link-996.icu-red.svg" alt="996.icu"/></a>|<a href="https://github.com/HengXin666/ThreadPool"><img alt="GitHub User's stars" src="https://img.shields.io/github/stars/HengXin666%2FThreadPool?style=flat-square&color=yellow"></a>|<a href="https://github.com/HengXin666/ThreadPool"><img src="https://img.shields.io/github/forks/HengXin666/ThreadPool?style=flat-square&color=orange" alt="GitHub forks"/></a>|<a href="https://github.com/HengXin666/ThreadPool"><img src="https://img.shields.io/github/watchers/HengXin666/ThreadPool?style=flat-square&color=green" alt="GitHub watchers"/></a>|<a href="https://github.com/HengXin666.com">HX</a>|
+<p align="center">|<a href="https://996.icu"><img src="https://img.shields.io/badge/link-996.icu-red.svg" alt="996.icu"/></a>|<a href="https://github.com/HengXin666/ThreadPool"><img alt="GitHub User's stars" src="https://img.shields.io/github/stars/HengXin666%2FThreadPool?style=flat-square&color=yellow"></a>|<a href="https://github.com/HengXin666/ThreadPool"><img src="https://img.shields.io/github/forks/HengXin666/ThreadPool?style=flat-square&color=orange" alt="GitHub forks"/></a>|<a href="https://github.com/HengXin666/ThreadPool"><img src="https://img.shields.io/github/watchers/HengXin666/ThreadPool?style=flat-square&color=green" alt="GitHub watchers"/></a>|<a href="https://github.com/HengXin666">HX</a>|
 </p>
 
 ## 1. 安装
