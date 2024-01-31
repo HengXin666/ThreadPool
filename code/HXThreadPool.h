@@ -18,7 +18,7 @@ using namespace std;
 
 namespace HX {
 	namespace tools {
-		// 单例-饿汉-输出类
+		// 单例-懒汉-输出类
 		class HXprint {
 			HXprint();
 		private:
