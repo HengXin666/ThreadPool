@@ -185,11 +185,11 @@ inline void setSinglNumer(int add = SINGLE_NUME, int sub = SINGLE_NUME);
 ```c++
 // --- 任务队列 组 ---
 std::queue<std::function<void()>> TP_threadTaskQueue;	// 任务队列
-int taskMaxSize;			// 任务数量
-int opTime;					// 间隔检查时间
-std::thread* TP_op;			// 管理者线程
+int taskMaxSize;					// 任务数量
+int opTime;						// 间隔检查时间
+std::thread* TP_op;					// 管理者线程
 
-std::mutex TP_mutex_all;					// 整个线程池的互斥锁
+std::mutex TP_mutex_all;				// 整个线程池的互斥锁
 
 std::condition_variable taskQueueFull;		// 条件变量: 任务队列满了
 std::condition_variable taskQueueEmpty;		// 条件变量: 任务队列空了
@@ -199,22 +199,22 @@ bool (*ifAddFunPtr)(int, int, int, int, int, int, int); // 函数指针指向是
 bool (*ifSubFunPtr)(int, int, int, int, int, int, int); // 函数指针指向是否减少线程的判断函数
 
 // --- 线程池 信息 ---
-int t_min;					// 最小线程数
-int t_max;					// 最大线程数
-int singleAdd;				// 单次添加的线程数
-int singleSub;				// 单次销毁的线程数
+int t_min;			// 最小线程数
+int t_max;			// 最大线程数
+int singleAdd;			// 单次添加的线程数
+int singleSub;			// 单次销毁的线程数
 
 std::atomic_int TP_busy;         // 繁忙线程数 (正在执行任务)
 std::atomic_int TP_idle;         // 空闲线程数 (已挂起)
 std::atomic_int TP_live;         // 存活线程数 == 空闲线程数 + 繁忙线程数
-std::atomic_int del_t_num;		 // 目前需要删除的线程数
+std::atomic_int del_t_num;	 // 目前需要删除的线程数
 
 // --- 线程池 社畜 ---
 std::map<std::thread::id, std::thread *> TP_consumer;	// 消费者红黑树 (添加/查找/删除 O(logN) 时间复杂度)
-std::queue<std::thread*> free_consumer;					// 需要释放的线程
+std::queue<std::thread*> free_consumer;			// 需要释放的线程
 
 // --- 线程池 开关 ---
-std::atomic_bool TP_free;		// 线程池是否释放
+std::atomic_bool TP_free;	// 线程池是否释放
 ```
 
 ### 4.4 自定义日志函数
